@@ -1,0 +1,15 @@
+.linkMore {
+  @include link-with-arrow("More");
+}
+
+.linkBack {
+  @include link-with-arrow("Back");
+}
+
+.linkMore--alternative {
+  @include link-with-arrow-alternative("More");
+}
+
+.linkBack--alternative {
+  @include link-with-arrow-alternative("Back");
+}

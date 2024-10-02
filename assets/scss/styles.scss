@@ -1,0 +1,18 @@
+// 1. Configuration and helpers
+@import "scss_parts/abstracts/variables", "scss_parts/abstracts/functions",
+  "scss_parts/abstracts/mixins";
+
+// 2. Base stuff
+@import "scss_parts/base/base", "scss_parts/base/fonts",
+  "scss_parts/base/typography", "scss_parts/base/icons",
+  "scss_parts/base/helpers";
+
+// 3. Layout-related sections
+@import "scss_parts/layout/footer", "scss_parts/layout/header",
+  "scss_parts/sections/history", "scss_parts/sections/history",
+  "scss_parts/sections/works", "scss_parts/sections/comments",
+  "scss_parts/sections/login", "scss_parts/sections/signup";
+
+// 4. Components
+@import "scss_parts/components/buttons", "scss_parts/components/dots",
+  "scss_parts/components/cards";

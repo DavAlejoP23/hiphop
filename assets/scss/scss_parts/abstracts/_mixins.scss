@@ -1,0 +1,103 @@
+@mixin link-with-arrow($direction) {
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 8px 15px;
+  border: 1px solid var(--primary-blue);
+  border-radius: 16px;
+  font-family: var(--poppins-font-family);
+  font-weight: var(--poppins-font-weight-bold);
+  font-style: var(--poppins-font-style-normal);
+  font-size: 14px;
+  line-height: 1em;
+  background-color: var(--primary-blue);
+  color: var(--white);
+  text-decoration: none;
+  @if $direction == "More" {
+    &:before {
+      content: "";
+    }
+    &:after {
+      content: var(--svg-arrow-more);
+      display: inline-block;
+      width: 21px;
+      margin-top: 2.5px;
+      margin-left: 5px;
+    }
+  } @else if $direction == "Back" {
+    &:before {
+      content: var(--svg-arrow-back);
+      display: inline-block;
+      width: 21px;
+      margin-top: 2.5px;
+      margin-right: 5px;
+    }
+    &:after {
+      content: "";
+    }
+  }
+
+  &:hover {
+    @if $direction == "More" {
+      &:after {
+        animation: moveForwardAndBack 2s ease infinite;
+      }
+    } @else if $direction == "Back" {
+      &:before {
+        animation: moveForwardAndBackInvert 2s ease infinite;
+      }
+    }
+  }
+}
+
+@mixin link-with-arrow-alternative($direction) {
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 8px 15px;
+  border: 1px solid var(--primary-yellow);
+  border-radius: 16px;
+  font-family: var(--poppins-font-family);
+  font-weight: var(--poppins-font-weight-bold);
+  font-style: var(--poppins-font-style-normal);
+  font-size: 14px;
+  line-height: 1em;
+  background-color: var(--primary-yellow);
+  color: var(--white);
+  text-decoration: none;
+  @if $direction == "More" {
+    &:before {
+      content: "";
+    }
+    &:after {
+      content: var(--svg-arrow-more);
+      display: inline-block;
+      width: 21px;
+      margin-top: 2.5px;
+      margin-left: 5px;
+    }
+  } @else if $direction == "Back" {
+    &:before {
+      content: var(--svg-arrow-back);
+      display: inline-block;
+      width: 21px;
+      margin-top: 2.5px;
+      margin-right: 5px;
+    }
+    &:after {
+      content: "";
+    }
+  }
+
+  &:hover {
+    @if $direction == "More" {
+      &:after {
+        animation: moveForwardAndBack 2s ease infinite;
+      }
+    } @else if $direction == "Back" {
+      &:before {
+        animation: moveForwardAndBackInvert 2s ease infinite;
+      }
+    }
+  }
+}

@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artistas del Hip-Hop</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container__nav">
+        <div class="container__nav--logo">
+          <a href="index.html">
+            <picture>
+              <source
+                srcset="assets/images/logo-hiphop.webp"
+                type="image/webp"
+              />
+              <img
+                src="assets/images/logo-hiphop.png"
+                alt="Logo Historia del Hip-Hop"
+              />
+            </picture>
+          </a>
+        </div>
+        <button
+          class="hamburger"
+          onclick="toggleHamburger()"
+          title="Navigation Menu"
+          type="button"
+        >
+          <div class="line1"><span></span> <span></span></div>
+          <div class="line2"><span></span> <span></span></div>
+          <div class="line3"><span></span> <span></span></div>
+        </button>
+      </div>
+      <nav class="container__nav--menu">
+        <ul>
+          <li><a href="artists.html">Artistas</a></li>
+          <li><a href="works.html">Obras</a></li>
+        </ul>
+      </nav>
+    </header>
+    <nav class="container__nav--submenu">
+      <ul class="list__menu">
+        <li><a href="artists.html">Artistas</a></li>
+        <li><a href="works.html">Obras</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="artists" class="container__section">
+        <div class="container__artists">
+          <h2>Artistas</h2>
+          <div class="container__artists--list slick--artists">
+            <div class="container__artists--card">
+              <img src="assets/images/tupac.png" alt="Tupac Amaru Shakur" />
+              <h3>2Pac</h3>
+              <p>
+                Tupac Amaru Shakur (1971-1996), conocido como 2Pac, fue un
+                rapero, actor y activista estadounidense, considerado uno de los
+                artistas más influyentes del hip-hop. Sus letras abordan temas
+                como la violencia, el racismo, la injusticia social y la vida en
+                los barrios marginales. Entre sus álbumes más destacados se
+                encuentran All Eyez on Me y Me Against the World, que reflejan
+                tanto su vida personal como las tensiones sociales de su tiempo.
+                También incursionó en el cine con películas como Juice y Poetic
+                Justice. Su asesinato en 1996 sigue siendo objeto de
+                controversia y misterio, pero su legado perdura en la música y
+                la cultura popular.
+              </p>
+            </div>
+            <div class="container__artists--card">
+              <img src="assets/images/snoop-dogg.png" alt="Snoop Dogg" />
+              <h3>Snoop Dogg</h3>
+              <p>
+                Snoop Dogg, nacido Calvin Cordozar Broadus Jr. en 1971, es un
+                rapero, productor y actor estadounidense que se convirtió en una
+                figura icónica del hip-hop. Descubierto por Dr. Dre, debutó en
+                1992 en el álbum The Chronic y lanzó su propio álbum,
+                Doggystyle, en 1993, que fue un éxito instantáneo y consolidó su
+                estilo "gangsta rap". Con su característico flow relajado y su
+                voz profunda, Snoop ha creado éxitos como "Gin and Juice" y
+                "Drop It Like It's Hot". Además de su música, ha incursionado en
+                el cine, la televisión y el activismo, y es conocido por su
+                estilo de vida relajado y su defensa del cannabis.
+              </p>
+            </div>
+            <div class="container__artists--card">
+              <img src="assets/images/lauryn-hill.png" alt="Lauryn Hill" />
+              <h3>Lauryn Hill</h3>
+              <p>
+                Lauryn Hill, nacida en 1975, es una cantante, rapera y actriz
+                estadounidense, reconocida por su impacto en el hip-hop y el
+                R&B. Como miembro del grupo The Fugees, alcanzó la fama con el
+                álbum The Score (1996), que incluía éxitos como "Killing Me
+                Softly". En 1998 lanzó su aclamado álbum en solitario The
+                Miseducation of Lauryn Hill, que ganó múltiples premios Grammy y
+                es considerado un clásico por su fusión de rap, soul y reggae,
+                abordando temas de amor, identidad y espiritualidad. Aunque su
+                carrera musical se ha desacelerado, su influencia sigue siendo
+                inmensa en la música y la cultura contemporánea.
+              </p>
+            </div>
+            <div class="container__artists--card">
+              <img src="assets/images/eminem.png" alt="eminem" />
+              <h3>Eminem</h3>
+              <p>
+                Eminem, cuyo nombre real es Marshall Bruce Mathers III, es un
+                rapero, productor y actor estadounidense nacido en 1972. Es
+                conocido por su habilidad lírica y su estilo único que mezcla
+                agresividad, humor y vulnerabilidad. Alcanzó la fama con su
+                álbum The Slim Shady LP (1999), que ganó un Grammy y lo
+                estableció como una de las figuras más destacadas del rap. Su
+                siguiente álbum, The Marshall Mathers LP (2000), fue un éxito
+                rotundo y se convirtió en uno de los discos de rap más vendidos
+                de todos los tiempos. Eminem ha abordado temas personales, como
+                su lucha con las drogas y la familia, en canciones icónicas como
+                "Lose Yourself" y "Stan". Su impacto ha sido enorme, cambiando
+                la percepción del rap en la cultura popular.
+              </p>
+            </div>
+            <div class="container__artists--card">
+              <img src="assets/images/ice-cube.png" alt="Ice Cube" />
+              <h3>Ice Cube</h3>
+              <p>
+                Ice Cube, nacido O'Shea Jackson en 1969, es un rapero, actor y
+                productor estadounidense, y una de las figuras pioneras del
+                gangsta rap. Ganó reconocimiento como miembro de N.W.A, un grupo
+                de rap influyente que abordaba temas como la brutalidad policial
+                y la vida en los barrios marginados, especialmente con el álbum
+                Straight Outta Compton (1988). Después de dejar el grupo, lanzó
+                exitosos álbumes en solitario, como AmeriKKKa’s Most Wanted
+                (1990) y Death Certificate (1991), conocidos por su contenido
+                político y social. Además de su música, Ice Cube ha tenido una
+                exitosa carrera en el cine, tanto como actor en películas como
+                Friday y Boyz n the Hood, como productor y guionista.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="assets/js/slick-custom.js"></script>
+    <script type="text/javascript" src="assets/js/utils.js"></script>
+    <script type="text/javascript" src="assets/js/comments.js"></script>
+  </body>
+</html>
